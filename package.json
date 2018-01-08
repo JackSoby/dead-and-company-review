@@ -1,0 +1,26 @@
+{
+  "name": "dead-and-company-review",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.2.0",
+    "babel-preset-react": "^6.24.1",
+    "coffeescript": "1.12.7",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jasmine-core": "^2.8.0",
+    "jasmine-enzyme": "^4.0.2",
+    "karma": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^2.0.9",
+    "phantomjs-prebuilt": "^2.1.16",
+    "react-addons-test-utils": "^15.6.2",
+    "webpack-dev-server": "2.9.7"
+  }
+}
