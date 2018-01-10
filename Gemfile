@@ -15,6 +15,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'pry-rails'
+gem 'json'
+gem 'dotenv-rails'
+gem 'httparty'
 
 
 group :development, :test do
