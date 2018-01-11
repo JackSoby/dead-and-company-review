@@ -1,0 +1,16 @@
+.top-bar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.top-bar{
+    background-color: blue;
+    opacity: 0.8;
+}
+
+.home {
+  font-weight: bold;
+  color: #000000;
+  font-family: 'Sumana', serif;
+
+}

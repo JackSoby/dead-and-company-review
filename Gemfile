@@ -19,6 +19,7 @@ gem 'pry-rails'
 gem 'json'
 gem 'dotenv-rails'
 gem 'httparty'
+gem 'foundation-rails'
 
 
 group :development, :test do
