@@ -22,6 +22,7 @@ class Home extends Component {
 }
 
   render(){
+  
     let tour = this.state.tours.map(tour=>{
     return(
       <div>
