@@ -11,7 +11,7 @@ class Home extends Component {
     }
   }
   componentDidMount(){
-  fetch(`/api/v1/setlists`,
+  fetch(`/api/v1/tours`,
       {method: 'GET', redirect: 'follow',
       credentials: "same-origin",
       headers: {"Content-Type": "application/json"}})
@@ -22,9 +22,18 @@ class Home extends Component {
 }
 
   render(){
+    let tour = this.state.tours.map(tour=>{
     return(
-      <div>this is home</div>
+      <div>
+      <TourTile
+      tour={tour.name}
+      />
+      </div>
     )
+  })
+  return(
+    <div>{tour}</div>
+  )
   }
 }
 
