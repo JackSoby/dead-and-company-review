@@ -12,5 +12,5 @@ response4 = HTTParty.get('http://api.setlist.fm/rest/0.1/artist/94f8947c-2d9c-45
 @dead4 = JSON.parse(response1.body)
 Tour.create(name: @dead1["setlists"]['setlist'].last["@tour"])
 Tour.create(name: @dead2["setlists"]['setlist'].first["@tour"])
-Tour.create(name: @dead3["setlists"]['setlist'].first["@tour"])
 Tour.create(name: @dead4["setlists"]['setlist'].last["@tour"])
+Tour.create(name: @dead3["setlists"]['setlist'].first["@tour"])
