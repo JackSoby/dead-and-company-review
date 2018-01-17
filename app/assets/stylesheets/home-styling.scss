@@ -1,19 +1,25 @@
-body{
 
+body{
+  background-color: black;
 }
+
+
 .tour-container{
   display: flex;
   justify-content: center;
 }
-.tour-tile{
+div.tour-tile{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  background-color: #2D00E6;
+  background-image: url('levi-price-35655');
+  background-repeat: no-repeat;
   width: 800px;
   height: 100px;
-  opacity: .9
+  opacity: .9;
+  color: white;
+  font-size: 30px;
 }
 .tour-tile:hover{
   opacity: .6
