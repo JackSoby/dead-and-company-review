@@ -2,15 +2,23 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-
-div.top-bar{
-    background-color: #ADBFBC;
-    opacity: 0.8;
+div.nav-container{
+  display: flex;
+justify-content: center;
 }
+div.top-bar{
+  background-color: #ADBFBC;
+  opacity: 0.8;
+  width: 65em;
+  margin-top: 15px;
+  height: 50px;
 
-.home {
-  font-weight: bold;
+}
+.home{
   color: #000000;
   font-family: 'Sumana', serif;
-
+  font-size: 20px;
+}
+.home:hover{
+  color:#000000;
 }
