@@ -13,10 +13,10 @@ class NavBar extends Component {
 
   render() {
     return(
-    <div>
+    <div className='nav-container'>
        <div className="top-bar">
           <nav>
-            <NavLink className='home' to='/' key={`navbar-${1}`}>Dead and Company Review</NavLink>
+            <NavLink className='home' to='/' key={`navbar-${1}`}>Home</NavLink>
             <span>
             </span>
           </nav>

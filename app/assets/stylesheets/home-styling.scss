@@ -1,6 +1,6 @@
 
 body{
-  background-color: black;
+  background-color: #5A5859;
 }
 
 
@@ -12,9 +12,10 @@ div.tour-tile{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 35px;
   background-image: url('levi-price-35655');
   background-repeat: no-repeat;
+  background-size:cover;
   width: 800px;
   height: 100px;
   opacity: .9;
