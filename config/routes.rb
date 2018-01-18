@@ -7,4 +7,5 @@ Rails.application.routes.draw do
         resources :tours, only: [:index]
       end
     end
+    get '*path', to: 'static_pages#index'
 end
