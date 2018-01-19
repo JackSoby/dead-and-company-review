@@ -20,7 +20,7 @@ class Home extends Component {
     .then(response => response.json())
     .then(body => {
     this.setState({tours: body})
-})
+  })
 }
 
   render(){
@@ -32,7 +32,7 @@ class Home extends Component {
           <TourTile
             tour={tour.name}
           />
-        </a> 
+        </a>
       </div>
     )
   })

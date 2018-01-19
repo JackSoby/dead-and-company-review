@@ -2,13 +2,14 @@ import React from 'react'
 
 
 
-const TourTile = props =>{
+const ShowTile = props =>{
+
   return(
     <div className='tour-container'>
       <div className='tour-image'></div>
-      <div className='tour-tile'>{props.tour}</div>
+      <div className='tour-tile'>{props.show}</div>
     </div>
   )
 }
 
- export default TourTile
+ export default ShowTile
