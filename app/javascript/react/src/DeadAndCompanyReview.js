@@ -13,7 +13,7 @@ const DeadAndCompanyReview = props => {
        <NavBar/>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/shows' component={ShowContainer} />
+          <Route path='/shows/:value' component={ShowContainer} />
         </Switch>
        </main>
       </Router>
