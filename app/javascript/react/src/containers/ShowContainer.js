@@ -12,10 +12,13 @@ class ShowContainer extends Component {
     }
   }
   componentDidMount(){
+      let ShowParams=this.props.match.params.value
   fetch(`/api/v1/shows`,
-      {method: 'GET', redirect: 'follow',
+      {method: 'POST', redirect: 'follow',
       credentials: "same-origin",
-      headers: {"Content-Type": "application/json"}})
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(ShowParams)
+    })
     .then(response => response.json())
     .then(body => {
     this.setState({shows: body})

@@ -26,19 +26,21 @@ class Home extends Component {
   render(){
 
     let tour = this.state.tours.map(tour=>{
+    let value = tour.name
+    let link = `/shows/:${value}`
     return(
       <div>
-        <a href='/shows'>
-          <TourTile
+      <Link to={link} >
+        <TourTile
             tour={tour.name}
           />
-        </a>
+        </Link>
       </div>
     )
   })
-  return(
-    <div>{tour}</div>
-  )
+    return(
+      <div>{tour}</div>
+    )
   }
 }
 

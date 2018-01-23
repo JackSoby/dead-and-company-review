@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       namespace :v1 do
         resources :setlists, only: [:index]
         resources :tours, only: [:index]
-        resources :shows, only: [:index]
+        resources :shows
       end
     end
     get '*path', to: 'static_pages#index'
