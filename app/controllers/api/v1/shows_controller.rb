@@ -14,26 +14,29 @@ class Api::V1::ShowsController < ApplicationController
       @dead2 = JSON.parse(response2.body)
 
         @shows = Array.new()
-          @dead["setlists"]['setlist'].each do |show|
-              if show['@eventDate'].include?('2015') == true
-            @shows.push("#{show["venue"]['@name']} " + "#{show['@eventDate']}")
-          else
-        end
-      end
-
-        @dead1["setlists"]['setlist'].each do |show|
+        @dead2["setlists"]['setlist'].each do |show|
             if show['@eventDate'].include?('2015') == true
           @shows.push("#{show["venue"]['@name']} " + "#{show['@eventDate']}")
         else
       end
     end
 
-      @dead2["setlists"]['setlist'].each do |show|
+    @dead1["setlists"]['setlist'].each do |show|
+        if show['@eventDate'].include?('2015') == true
+      @shows.push("#{show["venue"]['@name']} " + "#{show['@eventDate']}")
+    else
+  end
+end
+  @dead["setlists"]['setlist'].each do |show|
           if show['@eventDate'].include?('2015') == true
         @shows.push("#{show["venue"]['@name']} " + "#{show['@eventDate']}")
       else
     end
   end
-   render json: @shows.sort
+
+
+
+
+   render json: @shows
   end
 end
