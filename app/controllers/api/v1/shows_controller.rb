@@ -2,6 +2,8 @@ class Api::V1::ShowsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def create
+
+
     if params["_json"] == ":2015 U.S. Tour"
       @show = Show.api_2015_fetch
 
