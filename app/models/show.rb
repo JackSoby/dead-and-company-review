@@ -19,7 +19,7 @@ def self.fetch_all_shows()
         @dead2 = JSON.parse(response2.body)
           @dead1 = JSON.parse(response1.body)
 
-    @dead = @dead5["setlists"]['setlist'] + @dead4["setlists"]['setlist'] + @dead3["setlists"]['setlist'] + @dead2["setlists"]['setlist'] + @dead1["setlists"]['setlist']
+    @dead = @dead1["setlists"]['setlist'] + @dead2["setlists"]['setlist'] + @dead3["setlists"]['setlist'] + @dead4["setlists"]['setlist'] + @dead5["setlists"]['setlist']
 
     @shows = Array.new
 
