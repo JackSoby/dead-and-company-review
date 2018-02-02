@@ -39,8 +39,6 @@ def self.api_2015_fetch
     end
   return @shows
 end
-
-
 def self.api_2016_fetch
     @dead = Show.fetch_all_shows
       @shows = Array.new()
@@ -51,6 +49,15 @@ def self.api_2016_fetch
     end
   return @shows
 end
-
+def self.api_2017_summer_tour_fetch
+    @dead = Show.fetch_all_shows
+      @shows = Array.new()
+        @dead.each do |show|
+            if show.include?('2017') == true
+          @shows.push(show)
+      end
+    end
+  return @shows
+end
 
 end
